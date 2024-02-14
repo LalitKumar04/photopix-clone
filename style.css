@@ -1,0 +1,388 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.logo h1{
+    font-size: 60px;
+    margin: 15px 50px;
+    position: sticky;
+}
+.logo h1 span{
+    color: red;
+    position: sticky;
+}
+#header{
+    position: sticky;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
+}
+.navbar ul li{
+    padding-left: 50px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    position: sticky;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    position: sticky;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color: red;
+}
+.navbar ul li a.active::after,
+.navbar ul li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.search {
+    padding-right: 50px;
+    position: sticky;
+}
+.search .icon{
+    padding: 11px 40px;
+    font-size: 24px;
+    transition:0.3s ease;
+    position: sticky;
+}
+
+.search button.normal{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 11px 22px;
+    color: #fff;
+    background-color:red;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+ transition:0.5s ease;
+    padding-left: 30px;
+    position: sticky;
+}
+.search button.normal:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid red;
+}
+.search .icon:hover{
+    color: red;
+
+}
+#hero{
+ background-image: url(img/banner1.jpg);
+ height: 35vh;
+ width: 100wh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 300px;
+ background-repeat: no-repeat;
+ opacity: 20px;
+}
+#hero .txt{
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.3em;
+    padding-bottom: 20px;
+
+}
+#hero .input .search{
+        width: 550px;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+    
+    
+}
+#hero .input .white{ 
+    font-size: 36px;
+    padding: 5px 50px;
+   background-color: red;
+   color:white;
+   border-radius: 8px;
+    
+}
+#hero1 .menu {
+    display: flex;
+    align-items: center;
+    padding: 50px 40px;
+    justify-content: center;
+    gap: 80px;
+}
+#hero1 .menu .active2{
+    background-color: red;
+    border: 1px solid#fff;
+    color: #fff;
+    border-radius: 4px;
+    width: 50px;
+    padding: 10px;
+    font-size: 30px;
+}
+#hero1 .menu h2:hover{
+    background-color: red;
+    border: 1px solid#fff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 30px;
+    transition: 0.5s ease;
+}
+#hero1 .main-sec{
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       flex-wrap: wrap;
+       padding: 200px;
+   
+    }
+      
+#hero1 .main-sec .photo{
+    width: 23%;
+    min-width: 120px;
+    padding: 10px 20px;
+ 
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+  border-radius: 8px;
+ position: relative;
+    
+}
+#hero1 .main-sec .photo img{
+    height: 100%;
+    width: 150%;
+    border-radius: 8px;
+    border: 1px solid red;
+}
+#info h2{
+    font-size: 60px;
+   text-align: center;
+    font-weight: 700;
+    }
+    #info h2 span{
+    color: red;
+    }
+    #info h4{
+    text-align: center;
+        font-size: 30px;
+    font-weight: 700;
+    }
+    #info img{
+    font-size: 30px;
+    padding-left: 730px;
+    padding-top: 60px;
+    
+    }
+    #info p{
+    font-size: 20px;
+   text-align: center;
+    padding-top: 30px;
+    
+    }
+    #info h1{
+        padding-top: 20px;
+    font-size: 30px;
+    
+    font-weight: 700;
+    text-align:center;
+    }
+    #info .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 20%;
+   width: 50%;
+   margin: 0 500px;
+    
+    }
+    #info .icon .icon1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    #info .icon .icon1 img{
+    width: 20%;
+    padding-left: 70%;
+    padding-right: 70%;
+    margin: 15px 0;
+    
+    
+    }
+    #member{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    	margin: 20px 0px;
+        overflow: hidden;
+    }
+    #member .images{
+        width: 200px;
+	height: 200px;
+	cursor: pointer;
+	
+	transition: 0.4s ease-in-out;
+    }
+    #member .images img:hover{
+        transform: scale(1.5);
+    }
+    footer{
+        background: #262626;
+	  color: white;
+	    width: 87%;
+	    padding: 50px 100px;
+    }
+   footer .newsletter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:1px solid rgba(255,255,255,0.2);
+        width: 100%;
+        height: 200px;
+    
+    }
+    footer .newsletter .n-text{
+        color: white;
+        padding-left: 10%;
+    }
+    footer .newsletter .n-text h1{
+        font-size: 2em;
+        font-weight: normal;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+    }
+    footer .newsletter .n-text h2{
+
+            font-size: 20px;
+            margin-top: 10px;
+
+    }
+    footer .newsletter .n-search{
+        padding-right: 6%;
+
+    }
+    footer .newsletter .n-search input{
+        width: 450px;
+        height: 50px;
+      font-size: 25px;
+       border: 1px solid white;
+       border-radius: 4px;
+    }  
+    footer .newsletter .n-search .white{
+        font-size: 25px;
+        height: 50px;
+        width: 150px;
+        color:white;
+        background-color: red;
+        padding-left: 0%;
+    }
+
+    footer .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .about .links{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        }
+        footer .about .links a{
+            color: #c5c5ce;
+            text-decoration: none;
+         margin-top: 10px;
+            font-size: 20px;
+        }
+        footer .about .links a:hover{
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        footer .about .details{
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            }
+            footer .about .details a{
+                color: #c5c5ce;
+                text-decoration: none;
+             margin-top: 10px;
+                font-size: 20px;
+            }
+            footer .about .details a:hover{
+                color: #fff;
+                text-transform: uppercase;
+            }
+            footer .about .help{
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                }
+                footer .about .help a{
+                    color: #c5c5ce;
+                    text-decoration: none;
+                 margin-top: 10px;
+                    font-size: 20px;
+                }
+                footer .about .help a:hover{
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                footer .about .infor p{
+                    color: #c5c5ce;
+                    padding-top: 20px;
+                    font-size: 23px;
+                }
+           .infor .ico i{
+            
+            color: black;
+            background: #fff;
+            border-radius: 70px;
+            padding:25px;
+            font-size:26px;
+            margin: 10px 5px;
+            transition: .4s ease;
+            cursor: pointer;
+            
+            
+            }
+            .infor .ico i:hover{
+                background-color: black;
+                color: white;
+            }
+            footer{
+                border: 10px solid white;
+            }
+            
